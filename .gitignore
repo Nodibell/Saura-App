@@ -1,0 +1,8 @@
+.DS_Store
+*.dmg
+*.zip
+*.tar.gz
+build/
+DerivedData/
+*.swp
+*~
