@@ -10,6 +10,7 @@
   <img src="https://img.shields.io/badge/Platform-macOS%2014.0%2B%20(Sonoma%20%7C%20Sequoia)-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS 14+" />
   <img src="https://img.shields.io/badge/Architecture-Apple%20Silicon%20(arm64)-FF3B30?style=for-the-badge&logo=apple" alt="Apple Silicon" />
   <img src="https://img.shields.io/badge/Language-Swift%206%20%2B%20SwiftSci%203.9-FA7343?style=for-the-badge&logo=swift&logoColor=white" alt="Swift 6" />
+  <a href="WALKTHROUGH.md"><img src="https://img.shields.io/badge/Walkthrough-User%20Guide-success?style=for-the-badge&logo=bookstack&logoColor=white" alt="Walkthrough Guide" /></a>
   <a href="https://github.com/Nodibell/Saura"><img src="https://img.shields.io/badge/Source%20Code-Nodibell%2FSaura-24292e?style=for-the-badge&logo=github" alt="Source Code" /></a>
 </p>
 
