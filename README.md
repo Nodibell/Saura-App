@@ -76,17 +76,23 @@ Source code is maintained in the dedicated code repository: [Nodibell/Saura](htt
 
 ## 📸 Interface Preview
 
-<div align="center">
-  <p><em>(Screenshots and interface walk-throughs are available in the <code>media/screenshots/</code> directory)</em></p>
-</div>
+<p align="center">
+  <img src="media/screenshots/02_summary_dashboard_models.png" width="92%" alt="Saura Summary Dashboard & Model Inspector" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);" />
+  <br/>
+  <em>AutoML Model Leaderboard, Model Inspector, Real-time Validation Metrics & Ollama AI Analyst</em>
+</p>
 
-| Dataset Summary & Modality | Time Series Forecasting & S-ESD |
-| :---: | :---: |
-| *Exploratory data analysis & lexical profiles* | *Holt-Winters forecasting with 95% ribbon bounds* |
+<br/>
 
-| TreeSHAP Beeswarm & Explainability | Data Drift & Covariate Shift Sentry |
+| 📊 Data Ingestion & Pre-flight Schema | 📈 Model Quality & Partial Dependence (ICE) |
 | :---: | :---: |
-| *Feature impact visualization* | *Wasserstein distance & PSI metrics* |
+| <img src="media/screenshots/01_data_preview_and_setup.png" width="100%" alt="Data Preview & Schema Checklist" /> | <img src="media/screenshots/03_charts_distribution.png" width="100%" alt="Charts & Explainability" /> |
+| *Streaming dataset preview, schema verification & column stats* | *PDP & ICE curves, SwiftExplain feature importance* |
+
+| 🔥 Pearson Feature Correlation Matrix | 📑 High-Performance Data Inspector |
+| :---: | :---: |
+| <img src="media/screenshots/04_correlation_matrix.png" width="100%" alt="Correlation Matrix & Top Correlations" /> | <img src="media/screenshots/05_data_inspector.png" width="100%" alt="Data Inspector Table" /> |
+| *Interactive correlation heatmap & top ranked feature pairs* | *Virtual scrolling table supporting massive datasets* |
 
 ---
 
