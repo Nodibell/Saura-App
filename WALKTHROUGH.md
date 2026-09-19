@@ -26,7 +26,7 @@ This guide takes you through the entire end-to-end analytical workflow: from zer
 - **RAM**: 8 GB minimum (16 GB+ recommended for local LLM inference).
 
 ### Quick Install
-1. Download **[Saura-1.0.0-arm64.dmg](https://github.com/Nodibell/Saura-App/releases/latest/download/Saura-1.0.0-arm64.dmg)** from GitHub Releases.
+1. Download **[Saura-3.9.0-arm64.dmg](https://github.com/Nodibell/Saura-App/releases/latest/download/Saura-3.9.0-arm64.dmg)** from GitHub Releases.
 2. Double-click the DMG and drag **Saura.app** into `/Applications`.
 3. Launch Saura from Spotlight or Finder.
 
