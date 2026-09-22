@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Nodibell/Saura-App/releases/latest"><img src="https://img.shields.io/github/v/release/Nodibell/Saura-App?style=for-the-badge&color=blue&logo=apple&logoColor=white" alt="Latest Release" /></a>
+  <a href="https://github.com/Nodibell/Saura-App/releases"><img src="https://img.shields.io/github/v/release/Nodibell/Saura-App?include_prereleases&style=for-the-badge&color=blue&logo=apple&logoColor=white" alt="Latest Release" /></a>
   <img src="https://img.shields.io/badge/Platform-macOS%2014.0%2B%20(Sonoma%20%7C%20Sequoia)-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS 14+" />
   <img src="https://img.shields.io/badge/Architecture-Apple%20Silicon%20(arm64)-FF3B30?style=for-the-badge&logo=apple" alt="Apple Silicon" />
   <img src="https://img.shields.io/badge/Language-Swift%206%20%2B%20SwiftSci%203.9-FA7343?style=for-the-badge&logo=swift&logoColor=white" alt="Swift 6" />
@@ -27,7 +27,7 @@ Unlike traditional data science workflows reliant on heavy Python runtimes, Cond
 ## 📥 Download & Installation
 
 ### Option 1: Direct DMG Download (Recommended)
-1. Download the latest release: **[Saura-3.9.0-arm64.dmg](https://github.com/Nodibell/Saura-App/releases/latest/download/Saura-3.9.0-arm64.dmg)**
+1. Download the latest release: **[Saura-1.0.0-arm64.dmg](https://github.com/Nodibell/Saura-App/releases/download/v1.0.0/Saura-1.0.0-arm64.dmg)** (or browse all versions in [GitHub Releases](https://github.com/Nodibell/Saura-App/releases))
 2. Open the `.dmg` file.
 3. Drag **Saura.app** into your `/Applications` folder.
 4. Launch Saura from Launchpad or Spotlight.
@@ -62,7 +62,7 @@ Source code is maintained in the dedicated code repository: [Nodibell/Saura](htt
 ### 🔍 4. Explainable AI (XAI) & Manifold Projections
 - **SHAP**: In-process TreeSHAP and parallelized KernelSHAP with interactive Beeswarm plots.
 - **PDP**: Partial Dependence Plots for multi-feature non-linear interaction discovery.
-- **t-SNE Projections**: 2D non-linear manifold dimensionality reduction to cluster high-dimensional feature spaces.
+- **t-SNE Projections**: 2D non-linear manifold dimensionality reduction (SwiftCluster) with interactive Perplexity tuning, quartile binning, and sample drill-down inspection.
 
 ### 🛡️ 5. Rigorous Data Quality & Drift Guardrails
 - **Data Drift**: Real-time 1D Earth Mover's Distance (Wasserstein) and Population Stability Index (PSI) to detect train-test covariate shift.
