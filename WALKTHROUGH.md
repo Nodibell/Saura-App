@@ -95,6 +95,10 @@ Navigate to the **Charts** tab to audit model decisions and understand non-linea
   - Bar charts and Beeswarm plots displaying relative feature weights and TreeSHAP attribution values.
   - Interactive sorting by feature contribution magnitude.
 - **t-SNE 2D Manifold Projection & Smart Drill-Down (SwiftCluster)**:
+  <p align="center">
+    <img src="media/screenshots/03b_tsne_manifold_projection.png" width="95%" alt="t-SNE 2D Manifold Projection" style="border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.25);" />
+  </p>
+
   - **Nonlinear Dimensionality Reduction**: Unsupervised 2D projection embedding high-dimensional feature spaces ($N \ge 3$ features) while preserving local topological neighborhoods.
   - **Interactive Perplexity Slider**: Fine-tune cluster compactness on-the-fly (5 to 50) with instant native re-projection via `SwiftCluster`.
   - **Adaptive Target Coloring**: Classification datasets color points by discrete classes; continuous regression targets are automatically partitioned into 4 quartile intervals ($Q_1 \dots Q_4$) for clean, readable legends.
@@ -133,20 +137,53 @@ Switch to the **Data** tab to inspect the raw records underlying the analytical 
 
 ---
 
-## 🤖 Step 7: Local AI Analyst (Ollama / LM Studio)
+## 🧹 Step 7: Interactive Data Cleaning & Time-Travel Lineage
 
-On the right side of the window, the **AI Analyst** panel operates an autonomous **ReAct reasoning loop**:
+Navigate to the **Cleaning** tab to resolve anomalies, perform missing value imputation, and track dataset provenance.
 
-1. **Model Selection**: Switch seamlessly between local runtimes (**Ollama**, **LM Studio**, or **MLX Local**).
-2. **Zero Cloud Egress**: Sensitive enterprise datasets never leave your Mac — prompts and vector contexts are generated and processed 100% locally on Apple Silicon Neural Engine/GPU.
-3. **One-Click Quick Actions**:
-   - `📋 Summarize findings`: Generates an executive narrative of key statistical anomalies.
-   - `🎯 Model performance`: Synthesizes model trade-offs and recommends deployment candidates.
-4. **Natural Language Queries**: Ask custom questions in plain language (e.g., *"Which features have the highest collinearity and might cause leakage?"* or *"Explain why petal_length was chosen as the primary decision split"*).
+<p align="center">
+  <img src="media/screenshots/06_data_cleaning_and_lineage.png" width="95%" alt="Interactive Data Cleaning & Lineage" style="border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.25);" />
+</p>
+
+- **Per-Column Transformations**: Apply specialized missing-value imputations (Mean, Median, Constant, Forward-Fill), outlier pruning, and feature encoding.
+- **Audit Lineage**: Reversible time-travel versioning (`Data v1`, `Data v2`, `Data v3`) tracking every modification step for reproducible ML governance.
+- **One-Click Re-analysis**: Immediately trigger a clean pipeline execution with the updated schema.
 
 ---
 
-## 🚀 Step 8: Model Export (Core ML & ONNX)
+## 🔮 Step 8: What-If Predictions & Scenario Simulation
+
+Switch to the **Predict** tab to test hypothetical scenarios and evaluate model predictions in real time.
+
+<p align="center">
+  <img src="media/screenshots/07_what_if_predictions.png" width="95%" alt="What-If Predictions & Feature Inputs" style="border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.25);" />
+</p>
+
+- **Interactive Feature Inputs**: Bound sliders and numeric inputs constrained to observed dataset minimum and maximum values.
+- **Instant In-Process Inference**: Zero-latency predictions computed natively by the winning pipeline model (`Random Forest (SwiftML)`).
+- **Batch CSV Inference**: Process bulk unlabelled datasets with instantaneous exported predictions.
+
+---
+
+## 🤖 Step 9: Local AI Analyst & Autonomous Copilot (Ollama / LM Studio)
+
+On the right side of the window, the **AI Analyst** panel operates an autonomous **ReAct multi-agent reasoning loop**:
+
+<p align="center">
+  <img src="media/screenshots/08_ai_analyst_copilot.png" width="95%" alt="Autonomous ReAct AI Analyst Copilot" style="border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.25);" />
+</p>
+
+1. **Specialized Multi-Agent Roles**: Direct collaboration between `DataProfiler`, `StatisticalAnalyst`, `AnomalyDetector`, and `SynthesisLead`.
+2. **Model Selection**: Switch seamlessly between local runtimes (**Ollama**, **LM Studio**, or **MLX Local**).
+3. **Zero Cloud Egress**: Sensitive enterprise datasets never leave your Mac — prompts and vector contexts are generated and processed 100% locally on Apple Silicon Neural Engine/GPU.
+4. **One-Click Quick Actions**:
+   - `📋 Summarize findings`: Generates an executive narrative of key statistical anomalies.
+   - `🎯 Model performance`: Synthesizes model trade-offs and recommends deployment candidates.
+5. **Natural Language Queries**: Ask custom questions in plain language (e.g., *"Which features have the highest collinearity and might cause leakage?"* or *"Explain why petal_length was chosen as the primary decision split"*).
+
+---
+
+## 🚀 Step 10: Model Export (Core ML & ONNX)
 
 Once satisfied with a winning model from the AutoML pipeline:
 1. Click **Export Model & Code** on the Summary tab.

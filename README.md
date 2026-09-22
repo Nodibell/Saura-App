@@ -90,10 +90,20 @@ Source code is maintained in the dedicated code repository: [Nodibell/Saura](htt
 | <img src="media/screenshots/01_data_preview_and_setup.png" width="100%" alt="Data Preview & Schema Checklist" /> | <img src="media/screenshots/03_charts_distribution.png" width="100%" alt="Charts & Explainability" /> |
 | *Streaming dataset preview, schema verification & column stats* | *PDP & ICE curves, SwiftExplain feature importance* |
 
-| 🔥 Pearson Feature Correlation Matrix | 📑 High-Performance Data Inspector |
+| 🌌 t-SNE 2D Manifold Projection | 🔥 Pearson Feature Correlation Matrix |
 | :---: | :---: |
-| <img src="media/screenshots/04_correlation_matrix.png" width="100%" alt="Correlation Matrix & Top Correlations" /> | <img src="media/screenshots/05_data_inspector.png" width="100%" alt="Data Inspector Table" /> |
-| *Interactive correlation heatmap & top ranked feature pairs* | *Virtual scrolling table supporting massive datasets* |
+| <img src="media/screenshots/03b_tsne_manifold_projection.png" width="100%" alt="t-SNE 2D Manifold Projection" /> | <img src="media/screenshots/04_correlation_matrix.png" width="100%" alt="Correlation Matrix & Top Correlations" /> |
+| *Interactive perplexity tuning, pinned class coloring & drill-down* | *Interactive correlation heatmap & top ranked feature pairs* |
+
+| 📑 High-Performance Data Inspector | 🧹 Data Cleaning & Time-Travel Lineage |
+| :---: | :---: |
+| <img src="media/screenshots/05_data_inspector.png" width="100%" alt="Data Inspector Table" /> | <img src="media/screenshots/06_data_cleaning_and_lineage.png" width="100%" alt="Data Cleaning & Lineage" /> |
+| *Virtual scrolling table supporting massive datasets* | *Missing value imputation, outlier pruning & version audit* |
+
+| 🔮 Interactive What-If Predictions | 🤖 Autonomous ReAct AI Analyst Copilot |
+| :---: | :---: |
+| <img src="media/screenshots/07_what_if_predictions.png" width="100%" alt="What-If Predictions & Feature Sliders" /> | <img src="media/screenshots/08_ai_analyst_copilot.png" width="100%" alt="Local AI Analyst & Multi-Agent Copilot" /> |
+| *Real-time inference sliders & counterfactual scenario simulator* | *Local multi-agent copilot powered by Ollama / LM Studio* |
 
 ---
 
