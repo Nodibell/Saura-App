@@ -94,6 +94,12 @@ Navigate to the **Charts** tab to audit model decisions and understand non-linea
 - **Feature Importance (SwiftExplain)**:
   - Bar charts and Beeswarm plots displaying relative feature weights and TreeSHAP attribution values.
   - Interactive sorting by feature contribution magnitude.
+- **t-SNE 2D Manifold Projection & Smart Drill-Down (SwiftCluster)**:
+  - **Nonlinear Dimensionality Reduction**: Unsupervised 2D projection embedding high-dimensional feature spaces ($N \ge 3$ features) while preserving local topological neighborhoods.
+  - **Interactive Perplexity Slider**: Fine-tune cluster compactness on-the-fly (5 to 50) with instant native re-projection via `SwiftCluster`.
+  - **Adaptive Target Coloring**: Classification datasets color points by discrete classes; continuous regression targets are automatically partitioned into 4 quartile intervals ($Q_1 \dots Q_4$) for clean, readable legends.
+  - **Pinned Series Legend**: Toggling series filters on/off preserves each category's assigned palette color without cycling or recoloring.
+  - **Precision Sample Drill-Down**: Selecting any data point reveals a dedicated `🔍 Drill Down: Row #X (class) >` action pill. Clicking it opens the full feature inspector positioned directly on that exact dataset row along with its cluster peers.
 
 ---
 
@@ -123,6 +129,7 @@ Switch to the **Data** tab to inspect the raw records underlying the analytical 
 - **60 FPS Virtualized Scrolling**: Fluidly renders datasets with tens of thousands of rows using SwiftUI lazy evaluation.
 - **Search & Filter**: Instant client-side substring matching on all columns without re-indexing.
 - **Row Index & Type Badges**: Color-coded indicators distinguishing continuous floating-point variables from discrete categorical targets.
+- **Modal Drill-Down Inspection**: Seamlessly opens filtered row previews triggered from charts, histograms, or t-SNE manifold projections.
 
 ---
 
@@ -154,9 +161,11 @@ Once satisfied with a winning model from the AutoML pipeline:
 
 | Feature Area | Implementation in Saura | Technology Used |
 | :--- | :--- | :--- |
-| **Ingestion** | Zero-copy CSV, Parquet, SQLite, NPY | `vDSP`, Swift 6 Streaming Readers |
+| **Ingestion** | Zero-copy CSV, TSV, JSON, Parquet, SQLite, NPY/NPZ | `vDSP`, Swift 6 Streaming Readers |
 | **Engine** | In-process native execution | `SwiftSci 3.9.0` (Native Swift Framework) |
 | **AutoML** | Hyperparameter grid search & K-Fold CV | SwiftML, Decision Forests, GBDT |
 | **Explainability** | TreeSHAP, KernelSHAP, PDP / ICE | SwiftExplain Native Attribution |
+| **Manifold Projection** | t-SNE 2D with Perplexity tuning & Row Drill-Down | SwiftCluster, Barnes-Hut / Exact t-SNE |
+| **Forecasting** | Holt-Winters, ARIMA, S-ESD Anomaly Ribbons | SwiftForecast, Apple Accelerate vDSP |
 | **Security & Privacy** | 100% On-Device, No cloud upload | Local LLM via Ollama / LM Studio API |
 | **Distribution** | Standalone `.dmg` Apple Silicon package | `hdiutil`, notarization-ready arm64 binary |
