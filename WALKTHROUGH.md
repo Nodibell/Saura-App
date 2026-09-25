@@ -53,7 +53,7 @@ When you launch Saura, you are greeted with the streamlined ingest window. You c
 
 ## ⚡️ Step 2: Running Native AutoML & The Summary Dashboard
 
-Once analysis is triggered, the **SwiftSci 3.9.0 Engine** compiles and executes native machine learning algorithms directly on Apple Silicon unified memory without launching external Python or conda processes.
+Once analysis is triggered, the **SwiftSci 3.10.0 Engine** compiles and executes native machine learning algorithms directly on Apple Silicon unified memory without launching external Python or conda processes.
 
 <p align="center">
   <img src="media/screenshots/02_summary_dashboard_models.png" width="95%" alt="Summary Dashboard & Model Leaderboard" style="border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.25);" />
@@ -199,7 +199,7 @@ Once satisfied with a winning model from the AutoML pipeline:
 | Feature Area | Implementation in Saura | Technology Used |
 | :--- | :--- | :--- |
 | **Ingestion** | Zero-copy CSV, TSV, JSON, Parquet, SQLite, NPY/NPZ | `vDSP`, Swift 6 Streaming Readers |
-| **Engine** | In-process native execution | `SwiftSci 3.9.0` (Native Swift Framework) |
+| **Engine** | In-process native execution | `SwiftSci 3.10.0` (Native Swift Framework) |
 | **AutoML** | Hyperparameter grid search & K-Fold CV | SwiftML, Decision Forests, GBDT |
 | **Explainability** | TreeSHAP, KernelSHAP, PDP / ICE | SwiftExplain Native Attribution |
 | **Manifold Projection** | t-SNE 2D with Perplexity tuning & Row Drill-Down | SwiftCluster, Barnes-Hut / Exact t-SNE |

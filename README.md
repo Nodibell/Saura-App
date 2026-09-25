@@ -20,7 +20,7 @@
 
 **Saura** is an in-process, hardware-accelerated Data Science, AutoML, and AI Analytics desktop workbench built from the ground up for macOS and Apple Silicon. 
 
-Unlike traditional data science workflows reliant on heavy Python runtimes, Conda environments, and external server daemons, Saura operates as a **100% native macOS binary**. Powered by **Swift 6** and **SwiftSci 3.9.0**, it leverages Apple Silicon's unified memory architecture, Accelerate vDSP vector instructions, and MLX GPU acceleration for sub-millisecond computations with a near-zero memory footprint.
+Unlike traditional data science workflows reliant on heavy Python runtimes, Conda environments, and external server daemons, Saura operates as a **100% native macOS binary**. Powered by **Swift 6** and **SwiftSci 3.10.0**, it leverages Apple Silicon's unified memory architecture, Accelerate vDSP vector instructions, and MLX GPU acceleration for sub-millisecond computations with a near-zero memory footprint.
 
 ---
 
@@ -121,7 +121,7 @@ Saura was designed and engineered as part of research within the **Department of
 
 - **Specialty**: 126 «Information Systems and Technologies»
 - **Author**: Oleksii Chumak
-- **Core Engine**: [SwiftSci](https://github.com/Nodibell/SwiftSci) (v3.9.0)
+- **Core Engine**: [SwiftSci](https://github.com/Nodibell/SwiftSci) (v3.10.0)
 
 ---
 
