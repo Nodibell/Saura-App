@@ -27,7 +27,7 @@ Unlike traditional data science workflows reliant on heavy Python runtimes, Cond
 ## 📥 Download & Installation
 
 ### Option 1: Direct DMG Download (Recommended)
-1. Download the latest release: **[Saura-1.0.1-arm64.dmg](https://github.com/Nodibell/Saura-App/releases/download/v1.0.1/Saura-1.0.1-arm64.dmg)** (or browse all versions in [GitHub Releases](https://github.com/Nodibell/Saura-App/releases))
+1. Download the latest release: **[Saura-1.0.0-arm64.dmg](https://github.com/Nodibell/Saura-App/releases/download/v1.0.0/Saura-1.0.0-arm64.dmg)** (or browse all versions in [GitHub Releases](https://github.com/Nodibell/Saura-App/releases))
 2. Open the `.dmg` file.
 3. Drag **Saura.app** into your `/Applications` folder.
 4. Launch Saura from Launchpad or Spotlight.
